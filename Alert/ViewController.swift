@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     @IBAction func btpressed(_ sender: Any) {
-        let myAlert = UIAlertController(title: "알람",message: "설정된 시간이 되었습니다",preferredStyle: .alert)
+        let myAlert = UIAlertController(title: "알람",message: "설정된 시간이 되었습니다",preferredStyle: .actionSheet)
         let okAction = UIAlertAction(title: "종료", style: .default) { (action: UIAlertAction) -> Void in
             self.view.backgroundColor = UIColor.red
         }
